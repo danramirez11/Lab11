@@ -6,11 +6,11 @@ class ItemShop {
         this.description = description;
         this.category = category;
         this.image = image;
-        this.stars = stars
-        this.count = count
+        this.stars = stars;
+        this.count = count;
     }
 
-    html(pos){return `
+    html(pos){ return `
         <div class="product">
             <img src="${this.image}">
             <p>${this.title}</p>
@@ -20,13 +20,12 @@ class ItemShop {
         </div>
     </div>`};
 
-    htmlDetail(){return `
+    htmlDetail(){ return `
         <div id="details" class="details">
         <img src="${this.image}" alt="">
         <div>
             <h3>${this.title}</h3>
-            <div id="stars"></div>
-            <p class="text-blue">(${this.count})</p>
+            <p class="text-blue">${this.stars} stars (${this.count})</p>
             <h2>$${this.price}</h2>
             <p>${this.description}</p>
             <h5 class="cMen">${this.category}</h5>

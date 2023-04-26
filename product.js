@@ -12,9 +12,7 @@ async function getItemDetails() {
 
     detailsDiv.innerHTML = product.htmlDetail()
 
-    for(let i = 0; i < json.rating.rate.length; i++) {
-        starsDiv.innerHTML += `<img src="https://www.citypng.com/public/uploads/small/11659043933b3xr97hpbsw3djb73n6no5lrqoql8kb2zs0axu1q3k9j1zu2fcj2qlvyrlstylmi0ti4x8op5qlml1gaj3luj2qt1qravtvgqalj.png" alt="">`
-    }
+    
 }
 
 getItemDetails();
