@@ -7,9 +7,11 @@ async function getItemShop() {
     
     for(let i = 0; i < data.length; i++) {
         const productObj = new ItemShop(data[i].id, data[i].title, data[i].price, data[i].description, 
-          data[i].category, data[i].image)
+          data[i].category, data[i].image, data[i].rating.rate, data[i].rating.count)
         objList.push(productObj)
     }
+
+    console.log(objList)
 
     for(let i = 0; i < objList.length; i++) {
         const product = objList[i];

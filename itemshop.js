@@ -1,11 +1,13 @@
 class ItemShop {
-    constructor(id, title, price, description, category, image){
+    constructor(id, title, price, description, category, image, stars, count){
         this.id = id;
         this.title = title;
         this.price = price,
         this.description = description;
         this.category = category;
         this.image = image;
+        this.stars = stars
+        this.count = count
     }
 
     html(pos){return `
@@ -23,7 +25,8 @@ class ItemShop {
         <img src="${this.image}" alt="">
         <div>
             <h3>${this.title}</h3>
-            <p class="text-blue">(120)</p>
+            <div id="stars"></div>
+            <p class="text-blue">(${this.count})</p>
             <h2>$${this.price}</h2>
             <p>${this.description}</p>
             <h5 class="cMen">${this.category}</h5>
