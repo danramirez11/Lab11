@@ -82,7 +82,7 @@ h4{
 
 .product{
     width: 20vw;
-    height: 300px;
+    height: 350px;
     margin: 10px;
     box-shadow: 10px #000000;
     background-color: whitesmoke;
@@ -91,7 +91,7 @@ h4{
     display: flex;
     flex-direction: column;
 }
-.product img{
+.product-img{
     width: 100%;
     height: 50%;
     object-fit: cover;
@@ -127,6 +127,21 @@ h4{
     font-weight: bold;
 }
 
+.iconsDiv{
+    margin-top: 5px;
+}
+.iconsDiv img{
+    width: 10%;
+}
+
+
+.trashcan{
+    position: relative;
+    width: 10%;
+    left: 90%;
+    margin-bottom: 5px;
+}
+
 
 .details{
     display: flex;
@@ -149,9 +164,6 @@ h4{
     border-style: solid;
     border-radius: 10px;
 }
-.details button{
-    width: 100%;
-}
 .text-blue{
     color: rgb(98, 112, 220);
 }
@@ -167,7 +179,8 @@ h4{
     color: whitesmoke;
     background-color: #000000;
 }
-.details button{
+.details button, .carrito button{
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -181,4 +194,18 @@ h4{
 .car{
     color: rgb(98, 112, 220);
     background-color: rgb(222, 237, 247);
+}
+
+#totalPrice{
+    font-weight: bold;
+    font-size: large;
+}
+
+.carritoProducts div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carrito{
+    height: max-content;
 }

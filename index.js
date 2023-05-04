@@ -25,4 +25,3 @@ async function getItemShop() {
     const product = objList[pos];
     window.location.href = `./product.html?id=${product.id}`
 }
-

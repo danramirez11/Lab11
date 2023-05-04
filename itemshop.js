@@ -12,9 +12,14 @@ class ItemShop {
 
     html(pos){ return `
         <div class="product">
-            <img src="${this.image}">
-            <p>${this.title}</p>
-            <p class="text-bold">$${this.price}</p>
+        <img onclick="deleteProduct(event)" class="trashcan" src="https://freesvg.org/img/trash.png">
+            <img class="product-img" src="${this.image}">
+            <p class="productName">${this.title}</p>
+            <p class="text-bold productPrice">$${this.price}</p>
+            <div class="iconsDiv">
+            <img onclick="changeFavorite(event)" src="https://cdn-icons-png.flaticon.com/512/346/346472.png">
+            <img onclick="buyItem(event)" src="https://cdn-icons-png.flaticon.com/512/107/107831.png">
+            </div>
         <div class="buttonDiv">
             <button onclick="selected(${pos})">Comprar</button>
         </div>
